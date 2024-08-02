@@ -8,14 +8,14 @@ class Productos(models.Model):
     categorias_id = models.ForeignKey('Categorias', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.nombre
     
 class Categorias(models.Model):
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.nombre
     
 class Ordenes(models.Model):
     OPCIONES_ESTADO = [
@@ -31,7 +31,7 @@ class Ordenes(models.Model):
     Productos_id = models.ForeignKey('Productos', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.fecha
     
 class Calificacion(models.Model):
     id = models.AutoField(primary_key=True)
@@ -42,7 +42,7 @@ class Calificacion(models.Model):
     fecha = models.DateField()
 
     def __str__(self):
-        return self.name
+        return self.fecha
 
 class Clientes(models.Model):
     id = models.AutoField(primary_key=True)
@@ -52,4 +52,4 @@ class Clientes(models.Model):
     telefono = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.nombre
