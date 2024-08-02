@@ -32,6 +32,7 @@ ingresar entorno virtual(linux):
 source env/bin/activate
 
 Para instalar las dependencias del proyecto, ejecuta:
+
 pip install -r requirements.txt
 
 ## Uso
