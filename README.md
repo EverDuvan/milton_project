@@ -24,8 +24,11 @@ Antes de instalar y ejecutar este proyecto, asegúrate de tener instalado:
 ## Instalación
 
 crear entorno virtual(linux):
+
 python3 -m venv env
+
 ingresar entorno virtual(linux):
+
 source env/bin/activate
 
 Para instalar las dependencias del proyecto, ejecuta:
